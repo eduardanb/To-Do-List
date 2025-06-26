@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
+import Filter from './components/Filter';
 import './App.css';
+
+import { motion } from 'framer-motion';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <motion.h1 whileHover={{scale: 1.1}} >To Do List</motion.h1>
+      <TodoForm />
+      <Filter />
+      <TodoList />
     </div>
   );
 }
