@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setFilter } from '../redux/actions';
+import { motion } from 'framer-motion';
 
 const Filter = () => {
   const dispatch = useDispatch();
@@ -15,13 +16,15 @@ const Filter = () => {
   return (
     <div className="filter-container">
       {filters.map(filter => (
-        <button
+        <motion.button
+          transition={{duration:0.5}}
+          whileHover={{scale: 1.1}}
           key={filter.value}
           onClick={() => dispatch(setFilter(filter.value))}
           className={`filter-button ${currentFilter === filter.value ? 'active' : ''}`}
         >
           {filter.label}
-        </button>
+        </motion.button>
       ))}
     </div>
   );
