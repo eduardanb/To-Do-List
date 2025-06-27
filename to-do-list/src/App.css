@@ -1,5 +1,7 @@
 body {
-  background-color: #1e1e2f;
+  background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHVsMjdnc2lrNWNoZGNjd21idXlpN3poZDhheWg1am5jaW1oN2lyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FcqKy4Kj7XOK0hCW4g/giphy.gif');
+  background-size: cover;
+  background-position: center;
   margin: 0;
   padding: 0;
   display: flex;
@@ -14,13 +16,13 @@ body {
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #fefefe;
+  background-color: rgba(76, 175, 80, 0.6); /* verde com transparência */
   box-shadow: 0 0 100px rgba(255, 255, 255, 0.3);
 }
 
 .app h1 {
   text-align: center;
-  color: #1e1e2f;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -41,7 +43,7 @@ body {
 
 .add-button {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #003d00;
   color: white;
   border: none;
   border-radius: 0 4px 4px 0;
@@ -66,7 +68,7 @@ body {
 }
 
 .filter-button.active {
-  background-color: #4A90E2;
+  background-color: #003d00;
   color: white;
 }
 
@@ -113,7 +115,7 @@ body {
 .save-button {
   margin-left: 10px;
   padding: 5px 10px;
-  background-color: #4A90E2;
+  background-color: #003d00;
   color: white;
   border: none;
   border-radius: 4px;

@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 function App() {
   return (
     <div className="app">
-      <motion.h1 whileHover={{scale: 1.1}} >To Do List</motion.h1>
+      <motion.h1 whileHover={{scale: 1.1}} >To-Do List</motion.h1>
       <TodoForm />
       <Filter />
       <TodoList />
