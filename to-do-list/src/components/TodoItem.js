@@ -24,7 +24,7 @@ const TodoItem = ({ todo }) => {
         onChange={() => dispatch(toggleTodo(todo.id))}
         className="todo-checkbox"
       />
-      
+
       {isEditing ? (
         <form onSubmit={handleEditSubmit} className="edit-form">
           <input
@@ -35,22 +35,41 @@ const TodoItem = ({ todo }) => {
             autoFocus
           />
           <motion.button
-            type="submit" className="save-button"
-            transition={{duration:0.5}}
-            whileHover={{scale: 1.1}}           
-           >Salvar</motion.button>
+            type="submit"
+            className="save-button"
+            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.1 }}
+          >
+            Salvar
+          </motion.button>
         </form>
       ) : (
-        <span className="todo-text" onDoubleClick={() => setIsEditing(true)}>
+        <span className="todo-text">
           {todo.text}
         </span>
       )}
-      
-      <motion.button 
-        onClick={() => dispatch(deleteTodo(todo.id))} 
+
+      {!isEditing && (
+        <motion.button
+          onClick={() => setIsEditing(true)}
+          className="edit-button"
+          transition={{ duration: 0.5 }}
+          whileHover={{ scale: 1.1 }}
+        >
+          <img
+            src="/img/edit-text.png"
+            alt="Editar"
+            style={{ width: '20px', height: '20px' }}
+          />
+        </motion.button>
+
+      )}
+
+      <motion.button
+        onClick={() => dispatch(deleteTodo(todo.id))}
         className="delete-button"
-        transition={{duration:0.5}}
-        whileHover={{scale: 1.1}}
+        transition={{ duration: 0.5 }}
+        whileHover={{ scale: 1.1 }}
       >
         Excluir
       </motion.button>

@@ -122,6 +122,16 @@ body {
   cursor: pointer;
 }
 
+.edit-button{
+  padding: 5px 10px;
+  background-color:#003d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .delete-button {
   padding: 5px 10px;
   background-color: #f44336;
