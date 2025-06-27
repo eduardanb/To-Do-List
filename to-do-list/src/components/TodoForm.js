@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTodo } from '../redux/actions';
+import { motion } from 'framer-motion';
 
 const TodoForm = () => {
   const [text, setText] = useState('');
@@ -23,7 +24,11 @@ const TodoForm = () => {
         placeholder="Adicionar nova tarefa"
         className="todo-input"
       />
-      <button type="submit" className="add-button">Adicionar</button>
+      <motion.button 
+        type="submit" className="add-button"
+        transition={{duration:0.5}}
+        whileHover={{scale: 1.1}}
+      >Adicionar</motion.button>
     </form>
   );
 };

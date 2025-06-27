@@ -11,7 +11,9 @@ function App() {
     <div className="app">
       <motion.h1 whileHover={{scale: 1.1}} >To-Do List</motion.h1>
       <TodoForm />
+      
       <Filter />
+      
       <TodoList />
     </div>
   );

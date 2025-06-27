@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleTodo, editTodo, deleteTodo } from '../redux/actions';
+import { motion } from 'framer-motion';
 
 const TodoItem = ({ todo }) => {
   const dispatch = useDispatch();
@@ -33,7 +34,11 @@ const TodoItem = ({ todo }) => {
             className="edit-input"
             autoFocus
           />
-          <button type="submit" className="save-button">Salvar</button>
+          <motion.button
+            type="submit" className="save-button"
+            transition={{duration:0.5}}
+            whileHover={{scale: 1.1}}           
+           >Salvar</motion.button>
         </form>
       ) : (
         <span className="todo-text" onDoubleClick={() => setIsEditing(true)}>
@@ -41,12 +46,14 @@ const TodoItem = ({ todo }) => {
         </span>
       )}
       
-      <button 
+      <motion.button 
         onClick={() => dispatch(deleteTodo(todo.id))} 
         className="delete-button"
+        transition={{duration:0.5}}
+        whileHover={{scale: 1.1}}
       >
         Excluir
-      </button>
+      </motion.button>
     </div>
   );
 };
