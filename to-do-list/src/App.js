@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import Filter from './components/Filter';
@@ -10,6 +11,7 @@ function App() {
     <>
       <Header />
       <div className="app">
+        <motion.h1 whileHover={{scale: 1.1}} >To-Do List</motion.h1>
         <TodoForm />
         <Filter />
         <TodoList />

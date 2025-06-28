@@ -15,8 +15,8 @@ body {
 /* CABEÇALHO */
 .header-bar {
   width: 100%;
-  background-color: #4285F4;
-  padding: 15px 0;
+  background-color: rgba(76, 175, 80, 0.6);
+  padding: 5px; /* diminua aqui */
   position: fixed;
   top: 0;
   left: 0;
@@ -60,6 +60,12 @@ body {
   background-color: rgba(76, 175, 80, 0.6); /* verde translúcido */
   box-shadow: 0 0 100px rgba(255, 255, 255, 0.3);
   margin-top: 100px; /* espaço para o cabeçalho fixo */
+}
+
+.app h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 24px;
 }
 
 /* Resto igual */
@@ -179,4 +185,10 @@ body {
   padding: 20px;
   text-align: center;
   color: #999;
+}
+
+.header-logo-img img {
+  height: 80px; /* ou o tamanho que desejar */
+  width: auto;
+  display: block;
 }
