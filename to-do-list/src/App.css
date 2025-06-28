@@ -15,8 +15,8 @@ body {
 /* CABEÇALHO */
 .header-bar {
   width: 100%;
-  background-color: rgba(76, 175, 80, 0.6);
-  padding: 5px; /* diminua aqui */
+  background-color: #003d00; /* verde bem escuro */
+  padding: 5px;
   position: fixed;
   top: 0;
   left: 0;
