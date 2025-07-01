@@ -79,7 +79,7 @@ A aplicação é **totalmente responsiva**, adaptando-se a diferentes tamanhos d
 - Header e footer fixos para melhor navegação.
 - Testado em diferentes navegadores e dispositivos para garantir compatibilidade.
 
-![alt text](image-1.png)
+![alt text](image-2.png)
 
 ## Contribuição
 
