@@ -67,6 +67,20 @@ to-do-list/
   README.md
 ```
 
+## Design e Responsividade
+
+O design do projeto foi pensado para ser **moderno, limpo e agradável**, utilizando cores sóbrias e animações suaves para melhorar a experiência do usuário. O fundo animado com GIF traz dinamismo à interface, enquanto o card centralizado destaca o conteúdo principal.
+
+A aplicação é **totalmente responsiva**, adaptando-se a diferentes tamanhos de tela, desde computadores até dispositivos móveis. O layout dos componentes, botões e formulários se ajusta automaticamente para garantir usabilidade e legibilidade em qualquer resolução.
+
+- Utilização de variáveis CSS para facilitar a manutenção das cores e estilos.
+- Componentes com espaçamento e alinhamento flexível.
+- Botões e campos de formulário com feedback visual ao interagir.
+- Header e footer fixos para melhor navegação.
+- Testado em diferentes navegadores e dispositivos para garantir compatibilidade.
+
+![alt text](image-1.png)
+
 ## Contribuição
 
 Feito por João Victor Da Silva Almeida Guimarães e Maria Eduarda Da Nóbrega
